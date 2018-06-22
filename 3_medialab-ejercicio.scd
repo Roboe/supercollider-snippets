@@ -2,6 +2,10 @@
 // Impartido por Santiago Rapallo
 
 
+// Instancia de bus para el oscilador de baja frecuencia ("low frequency oscillator")
+~busPan = Bus.control;
+
+
 // Definición de sintetizador con la entrada del micrófono
 // Paneo de estéreo con el UGen Pan2
 (
@@ -17,12 +21,15 @@ SynthDef(
 ).add
 )
 
+~soundInPan = Synth(\soundInPan);
+~soundInPan.map(\pos, ~busPan);
+
 
 // EJERCICIO: hacer una definición de sinte que sea un LFNoise0 de control con salida al bus que sirve de entrada al UGen de paneo del sinte
 
 (
 SynthDef(
-	\lfNoise0,
+	\lfNoisePan,
 	{
 		arg freq = 1, bus;
 		var sign;
@@ -32,9 +39,4 @@ SynthDef(
 ).add
 )
 
-
-~soundInPan = Synth(\soundInPan);
-~lfoBusPan = Bus.control;
-~lfNoise = Synth(\lfNoise0, [\bus, ~lfoBusPan]);
-
-~soundInPan.map(\pos, ~lfoBusPan);
+~lfPan = Synth(\lfNoisePan, [\bus, ~busPan]);
