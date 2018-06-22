@@ -24,7 +24,7 @@ SynthDef(
 SynthDef(
 	\lfNoise0,
 	{
-		arg freq = 550, bus;
+		arg freq = 1, bus;
 		var sign;
 		sign = LFNoise0.kr(freq);
 		Out.kr(bus, sign);
@@ -37,5 +37,4 @@ SynthDef(
 ~lfoBusPan = Bus.control;
 ~lfNoise = Synth(\lfNoise0, [\bus, ~lfoBusPan]);
 
-~soundInPan.map(\pos, ~lfBusPan);
-
+~soundInPan.map(\pos, ~lfoBusPan);
