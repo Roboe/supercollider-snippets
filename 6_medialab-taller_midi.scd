@@ -35,3 +35,5 @@ MIDIdef.noteOn(
 	//srcID: 1310720,
 )
 )
+
+// Para OSC, OSCResponder
