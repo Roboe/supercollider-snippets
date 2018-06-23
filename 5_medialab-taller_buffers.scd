@@ -1,3 +1,7 @@
+// 2018-06-23
+// Impartido por Santiago Rapallo
+
+
 b = Buffer.alloc(s, 48000);
 
 (
