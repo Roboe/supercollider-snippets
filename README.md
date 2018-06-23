@@ -28,6 +28,9 @@ UGens → generadores y modificadores
 
 ## Recursos externos
 
+
+### Guías y tutoriales
+
 [bruno-ruviaro]: http://www.brunoruviaro.com/
 [eli-fieldsteel]: http://www.elifieldsteel.com/about
 [eli-videotutorials-donate]: http://www.elifieldsteel.com/supercollider/video-tutorials
@@ -37,3 +40,9 @@ UGens → generadores y modificadores
   - Fuentes (copyleft GPLv3): https://github.com/brunoruviaro/A_Gentle_Introduction_To_SuperCollider
 - Videotutoriales gratuítos de [Eli Fieldsteel][eli-fieldsteel]:
   - YouTube: https://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC ([donar para agradecer][eli-videotutorials-donate])
+
+### Recursos de audio
+
+- Banco de sonido FreePats (CC0, CC-BY 3.0, CC-BY 4.0, GPL + derivative works exception)
+  - Banco de sonidos web: http://freepats.zenvoid.org/
+  - General MIDI sound set: http://freepats.zenvoid.org/SoundSets/general-midi.html
